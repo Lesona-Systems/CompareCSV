@@ -28,6 +28,7 @@ if __name__ == "__main__":
     # Create the main window
     root = tk.Tk()
     root.title("CSV Data Finder")
+    root.iconbitmap(r'C:\Users\NEJWr\OneDrive\Documents\GitHub\testbed\search.ico')
 
     # File 1 entry and browse button
     file1_entry = tk.Entry(root, width=50)
@@ -46,6 +47,10 @@ if __name__ == "__main__":
     # Result text widget
     result_text = tk.Text(root, height=10, width=50)
     result_text.grid(row=2, column=0, columnspan=2, padx=5, pady=5)
+
+    scrollbar = tk.Scrollbar(root, command=result_text.yview)
+    scrollbar.grid(row=2, column=2, sticky='ns')
+    result_text.config(yscrollcommand=scrollbar.set)
 
     # Find Common Data button
     find_button = tk.Button(root, text="Find Common Data", command=lambda: find_common_data(file1_entry.get(), file2_entry.get()))
