@@ -12,7 +12,7 @@ def find_common_data(file1, file2):
     data1 = read_csv(file1)
     data2 = read_csv(file2)
 
-    common_data = set(data1) & set(data2)
+    common_data = set(data1) & set(data2) # bitwise op here is cleeeeeeeeean
 
     result_text.delete(1.0, tk.END)  # Clear previous results
     result_text.insert(tk.END, "Common Data:\n")
@@ -27,7 +27,7 @@ def browse_file(entry):
 if __name__ == "__main__":
     # Create the main window
     root = tk.Tk()
-    root.title("CSV Data Finder")
+    root.title("CSV Data Compare")
     root.iconbitmap(r'C:\Users\NEJWr\OneDrive\Documents\GitHub\testbed\search.ico')
 
     # File 1 entry and browse button
