@@ -35,6 +35,9 @@ MANIFEST
 #Icon
 *.ico
 
+#Idiot Files
+build_cmd.txt
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
