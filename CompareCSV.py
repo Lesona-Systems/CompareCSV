@@ -28,7 +28,7 @@ if __name__ == "__main__":
     # Create the main window
     root = tk.Tk()
     root.title("CSV Data Compare")
-    root.iconbitmap(r'C:\Users\NEJWr\OneDrive\Documents\GitHub\testbed\search.ico')
+    #root.iconbitmap(r'C:\Users\NEJWr\OneDrive\Documents\GitHub\testbed\search.ico')
 
     # File 1 entry and browse button
     file1_entry = tk.Entry(root, width=50)
